@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY DIGITAL UNIVERSE — Interactive Website Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-theme">
+
+  <!-- BACKGROUND DECORATIONS -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar-container">
+    <nav class="navbar glass-card">
+      <div class="nav-brand">
+        <span class="brand-sparkle">✦</span>
+        <span class="brand-text">DIGITAL UNIVERSE</span>
+      </div>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#projects" class="nav-link">My Projects</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <span class="theme-icon sun-icon">☀️</span>
+          <span class="theme-icon moon-icon">🌙</span>
+        </button>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge glass-pill">
+          <span class="pill-dot"></span>
+          <span>Interactive Exhibition Portfolio</span>
+        </div>
+        
+        <h1 class="hero-title">
+          MY DIGITAL <span class="gradient-text">UNIVERSE</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          "A Collection of Ideas, Creativity & Digital Experiences."
+        </p>
+
+        <p class="hero-intro">
+          Welcome to my digital exhibition. This portfolio showcases five distinct websites crafted with passion, featuring dynamic user interfaces, custom media galleries, and interactive web experiences.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore My Projects</span>
+            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#about" class="btn btn-secondary">
+            <span>About Exhibition</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- HERO VISUAL DECORATION -->
+      <div class="hero-visual-card glass-card">
+        <div class="visual-header">
+          <div class="visual-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="visual-tag">EXHIBITION DATA // ACTIVE</span>
+        </div>
+        <div class="visual-stats">
+          <div class="stat-box">
+            <span class="stat-num" id="statProjectCount">5</span>
+            <span class="stat-label">Web Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <span class="stat-num" id="statScreenshotCount">13</span>
+            <span class="stat-label">Real Screenshots</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Data-Driven UI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION (SELF-GENERATED DATA-DRIVEN GALLERY) -->
+    <section id="projects" class="projects-section">
+      <div class="section-header text-center">
+        <div class="section-badge glass-pill">
+          <span>Curated Work</span>
+        </div>
+        <h2 class="section-title">PROJECT <span class="gradient-text">EXHIBITION</span></h2>
+        <p class="section-description">
+          Swipe or click through screenshot carousels for each project. Click <strong>VISIT WEBSITE</strong> to launch the live application in a new tab.
+        </p>
+      </div>
+
+      <!-- PROJECT CARDS CONTAINER (RENDERED VIA JAVASCRIPT) -->
+      <div id="projectsContainer" class="projects-container">
+        <!-- Self-adjusting JS renderer populates project cards here -->
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <div class="glass-card about-card">
+        <div class="about-grid">
+          <div class="about-text-content">
+            <div class="section-badge glass-pill">
+              <span>Behind The Code</span>
+            </div>
+            <h2 class="section-title">Crafting <span class="gradient-text">Digital Experiences</span></h2>
+            <p>
+              My Digital Universe is designed as an interactive presentation architecture. Every project card, gallery slider, touch gesture, and layout breakpoint automatically adjusts to the dataset provided.
+            </p>
+            <p>
+              Whether showcasing interactive surprise websites for family, dedicated anime archives, or comprehensive learning platforms, each project reflects attention to detail, smooth user workflows, and custom styling.
+            </p>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3 / Glassmorphism</span>
+              <span class="tech-pill">Vanilla JavaScript (ES6+)</span>
+              <span class="tech-pill">Touch & Drag Carousels</span>
+              <span class="tech-pill">Data-Driven Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="glass-card contact-card text-center">
+        <div class="section-badge glass-pill">
+          <span>Get In Touch</span>
+        </div>
+        <h2 class="section-title">Let's Connect & <span class="gradient-text">Collaborate</span></h2>
+        <p class="section-description">
+          Have feedback on these projects or want to discuss web development and custom front-end builds? Feel free to drop a message!
+        </p>
+        
+        <div class="contact-actions">
+          <a href="https://github.com/kumadk403-cmd" target="_blank" class="btn btn-primary">
+            <span>Explore GitHub Profile</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer text-center">
+    <p>© 2026 <strong>MY DIGITAL UNIVERSE</strong>. Created with precision & passion.</p>
+  </footer>
+
+  <!-- LIGHTBOX / FULLSCREEN GALLERY MODAL -->
+  <div id="lightboxModal" class="lightbox-modal">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Fullscreen Screenshot" />
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="projects-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
